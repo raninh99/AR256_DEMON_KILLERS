@@ -16,7 +16,9 @@ record=db.sih
 from rest_framework.decorators import api_view
 import hashlib 
 
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
 
