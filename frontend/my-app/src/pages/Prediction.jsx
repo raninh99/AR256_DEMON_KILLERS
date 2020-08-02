@@ -15,7 +15,6 @@ import Button from 'react-bootstrap/Button';
 
 import axios from 'axios';
 
-import Footer from '../util/Footer';
 
 import CONTENT from '../Lang/prediction.json';
 
@@ -748,7 +747,7 @@ const Prediction =() =>{
             
             
             
-           < Footer /> 
+           
         </div>
     );
 }
