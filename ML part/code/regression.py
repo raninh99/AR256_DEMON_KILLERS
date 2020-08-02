@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 14 09:18:55 2020
-
-@author: user
-"""
 
 
 import numpy as np
@@ -11,80 +5,121 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-#d=os.path.dirname(os.getcwd())
-#xn=d
-#f=os.path.join(d,"States")
-#e=os.path.join(f,"Gujrat")
-#q=os.path.join(e,"Amreli")
+os.chdir("D:/")
 
-#os.chdir(q)
+d=os.path.dirname(os.getcwd())
+d
+xn=os.path.join(d,"sih")
+f=os.path.join(d,"sih/States")
+e=os.path.join(f,"gujarat")
+q=os.path.join(e,"Amreli")
+os.chdir(q)
 
-dataset = pd.read_csv("test2.csv")
+dataset = pd.read_csv("jan.csv")
 x=dataset.iloc[:,:-1].values 
 y=dataset.iloc[:,-1].values 
 
-#l=os.path.join(xn,"2020")
 
-#os.chdir(l)
+size=y.size
 
-dataset2 = pd.read_csv("jan2.csv")
+
+
+l=os.path.join(xn,"year")
+#j=os.path.join(l,"jan") 
+os.chdir(l)
+
+dataset2 = pd.read_csv("jan.csv")
 x2=dataset2.iloc[:,:-1].values
 #y2=dataset2.iloc[:,-1].values
 
-
-yeild =np.array(dataset.iloc[:,3].values)
-j=0
-sm=0
-for i in range(5):
-   sm+=yeild[j] 
-   j+=20
-   
-sm=sm//6   
-
-
-   
-area =np.array(dataset.iloc[:,2].values)
-j=0
-sa=0
-for i in range(5):
-    sa+=area[j]
-    j+=20
-    
-sa=sa/6
+import math
+a=0
+yi=0
+for i in range(len(x)):
+    a=a+x[i][2]
+    yi=yi+x[i][3]   
+a/=size
+yi/=size
 
 
+
+for i in range(len(x2)):
+    x2[i][2]=a
+    x2[i][3]=yi
+
+x2
 
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
-labelencoder=LabelEncoder()
-x[:,0]=labelencoder.fit_transform(x[:,0])
-onehotencoder=OneHotEncoder(categorical_features=[0])
-x=onehotencoder.fit_transform(x).toarray()
-labelencoder=LabelEncoder()
-x[:,1]=labelencoder.fit_transform(x[:,1])
-onehotencoder1=OneHotEncoder(categorical_features=[1])
-x=onehotencoder1.fit_transform(x).toarray()
+from sklearn.compose import ColumnTransformer
+
+label_encoder_x_1 = LabelEncoder()
+x[: , 0] = label_encoder_x_1.fit_transform(x[:,0])
+transformer = ColumnTransformer(
+    transformers=[
+        ("OneHot",        
+         OneHotEncoder(), 
+         [0]              
+         )
+    ],
+    remainder='passthrough' 
+)
+x = transformer.fit_transform(x.tolist())
+x = x.astype('float64')
+
+x
+
+label_encoder_x_2 = LabelEncoder()
+x[: , 1] = label_encoder_x_1.fit_transform(x[:,1])
+transformer = ColumnTransformer(
+    transformers=[
+        ("OneHot",        
+         OneHotEncoder(), 
+         [1]              
+         )
+    ],
+    remainder='passthrough' 
+)
+x = transformer.fit_transform(x.tolist())
+x = x.astype('float64')
+
+
 #x=x[:,1:]
 
 
 
-labelencoder=LabelEncoder()
-x2[:,0]=labelencoder.fit_transform(x2[:,0])
-onehotencoder=OneHotEncoder(categorical_features=[0])
-x2=onehotencoder.fit_transform(x2).toarray()
-labelencoder=LabelEncoder()
-x2[:,1]=labelencoder.fit_transform(x2[:,1])
-onehotencoder=OneHotEncoder(categorical_features=[1])
-x2=onehotencoder.fit_transform(x2).toarray()
-#x2=x2[:,1:]
-'''
-from sklearn.model_selection import train_test_split
-x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.8,random_state=0)'''
 
-for i in range(20):
-    x2[i][21]=sa
-    x2[i][22]=sm
-    
-    
+label_encoder_x_2 = LabelEncoder()
+x2[: , 0] = label_encoder_x_1.fit_transform(x2[:,0])
+transformer = ColumnTransformer(
+    transformers=[
+        ("OneHot",        
+         OneHotEncoder(), 
+         [0]              
+         )
+    ],
+    remainder='passthrough' 
+)
+x2 = transformer.fit_transform(x2.tolist())
+x2 = x2.astype('float64')
+
+label_encoder_x_2 = LabelEncoder()
+x2[: , 1] = label_encoder_x_1.fit_transform(x2[:,1])
+transformer = ColumnTransformer(
+    transformers=[
+        ("OneHot",        
+         OneHotEncoder(), 
+         [1]             
+         )
+    ],
+    remainder='passthrough' 
+)
+x2 = transformer.fit_transform(x2.tolist())
+x2 = x2.astype('float64')
+#x2=x2[:,1:]
+
+
+
+
 from sklearn.linear_model import LinearRegression
 regressor=LinearRegression()
 regressor.fit(x,y)
