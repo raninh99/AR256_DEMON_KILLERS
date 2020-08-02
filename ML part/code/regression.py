@@ -9,13 +9,13 @@ os.chdir("D:/")
 
 d=os.path.dirname(os.getcwd())
 d
-xn=os.path.join(d,"sih")
-f=os.path.join(d,"sih/States")
-e=os.path.join(f,"gujarat")
-q=os.path.join(e,"Amreli")
+xn=os.path.join(d,"sih_2/sih")
+f=os.path.join(d,"sih_2/sih/States")
+e=os.path.join(f,"up")
+q=os.path.join(e,"Hathras")
 os.chdir(q)
 
-dataset = pd.read_csv("jan.csv")
+dataset = pd.read_csv("feb.csv")
 x=dataset.iloc[:,:-1].values 
 y=dataset.iloc[:,-1].values 
 
@@ -28,7 +28,7 @@ l=os.path.join(xn,"year")
 #j=os.path.join(l,"jan") 
 os.chdir(l)
 
-dataset2 = pd.read_csv("jan.csv")
+dataset2 = pd.read_csv("feb.csv")
 x2=dataset2.iloc[:,:-1].values
 #y2=dataset2.iloc[:,-1].values
 
@@ -47,7 +47,7 @@ for i in range(len(x2)):
     x2[i][2]=a
     x2[i][3]=yi
 
-x2
+
 
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -66,7 +66,7 @@ transformer = ColumnTransformer(
 x = transformer.fit_transform(x.tolist())
 x = x.astype('float64')
 
-x
+
 
 label_encoder_x_2 = LabelEncoder()
 x[: , 1] = label_encoder_x_1.fit_transform(x[:,1])
