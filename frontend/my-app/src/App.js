@@ -8,10 +8,12 @@ import './App.css';
 
 
 
+import NavBar from './util/NavBar';
 
 import login from './pages/Login1';
 import signup from './pages/Signup';
 import logout from './pages/Logout';
+import prediction from './pages/Prediction';
 
 import forgotPassword from './pages/ForgotPassword';
 
@@ -29,12 +31,13 @@ const  App = () => {
     <Store.Provider value={{state,dispatch}} >
       <div className="App">
       <Router>
-        
+      <NavBar />
         <Switch>
           {/* <Route exact path = '/home' component ={home} /> */}
           <Route path = '/login' component = {login} />
           <Route path = '/logout' component = {logout} />
           <Route path = '/signup' component = {signup} />
+          <Route path = '/prediction' component = {prediction} />
           
           <Route path = '/forgotPassword' component = {forgotPassword} />
           

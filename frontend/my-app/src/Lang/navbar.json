@@ -1,0 +1,22 @@
+{
+    "English": {
+        "title" : "World of Cotton",
+        "home": "Home",
+        "market" : "Market",
+        "prediction":"Prediction",
+        "login": "Login",
+        "signup":"Sign-up",
+        "logout":"Logout",
+        "profile": "Profile"
+      },
+    "Hindi": {
+        "title": "कपास की दुनिया",
+        "home": "होम",
+        "market" : "मंडी",
+        "prediction":"पूर्वानुमान",
+        "login": "लॉग इन ",
+        "signup":"साइन अप",
+        "logout":"लॉग आउट",
+        "profile": "प्रोफ़ाइल"
+      }
+  }
