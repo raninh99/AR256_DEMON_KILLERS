@@ -1,0 +1,48 @@
+{
+    "English": {
+        "predh": "Predict the price of cotton",
+        "predd": "Here you can see the prediction of future market price trend of cotton in your selected market places all over country and month and year also. The graph that will be shown to you is for 20 days as in a month on an average market opens for only 20 days ignoring all the Sundays and holidays so you can have the trend accordingly and you can easily make your market strategy. After this month wise graph you can also able to see full year market trend of cotton. ",
+        "pred2h": "Select State either from map or from options on right side",
+        "region": "Region",
+        "mon": "Month",
+        "mpoc": "Market Places of Cotton",
+        "conf": "Confirm",
+        "res": "Get Result",
+        "ins": "Please select State, region and month to get result",
+        "har":"Haryana",
+	"up":"Uttar Pradesh",
+	"guj":"Gujarat",
+	"kar": "Karnataka",
+	"mp":"Madhya Pradesh",
+	"ap":"Andhra Pradesh",
+	"mah":"Maharashtra",
+	"raj":"Rajasthan",
+	"pun":"Punjab",
+	"tel":"Telangana",
+	"tn":"Tamil Nadu"
+        
+    },
+    "Hindi": {
+        "predh": "कपास की कीमत का पूर्वानुमान करें",
+        "predd": "यहां आप अपने चुने हुए बाजार स्थानों में कपास के भविष्य के बाजार मूल्य प्रवृत्ति की भविष्यवाणी देख सकते हैं और महीने और साल भी। आपको जो ग्राफ दिखाया जाएगा, वह एक महीने में 20 दिनों के लिए है, क्योंकि औसत बाजार में सभी रविवार और छुट्टियों को अनदेखा करते हुए केवल 20 दिनों के लिए खुलता है, इसलिए आपके अनुसार रुझान हो सकता है और आप आसानी से अपनी बाजार रणनीति बना सकते हैं। इस महीने के अनुसार ग्राफ के बाद आप कपास के पूरे साल के बाजार के रुझान को भी देख सकते हैं।",
+        "pred2h": "मानचित्र से या दाईं ओर के विकल्पों में से राज्य का चयन करें",
+        "region": "क्षेत्र",
+        "mon": "महीने",
+        "mpoc": "कपास के बाजार के स्थान",
+        "conf": "पुष्टि करें",
+        "res": "परिणाम",
+        "ins": "परिणाम प्राप्त करने के लिए कृपया राज्य, क्षेत्र और महीना चुनें",
+        "har":" हरियाणा",
+        "up": "उत्तर प्रदेश",
+        "guj": "गुजरात",
+        "kar":" कर्नाटक",
+        "mp":"मध्य प्रदेश",
+        "ap":" आंध्र प्रदेश",
+        "mah":" महाराष्ट्र",
+        "raj":" राजस्थान",
+        "pun":" पंजाब",
+        "tel":"तेलंगाना",
+        "tn":" तमिलनाडु"
+    }
+}
+

@@ -1,0 +1,44 @@
+{
+    "English": {
+        "firstIcon": "Prediction of cotton price on basis of states and cities.",
+        "secIcon": "Find out the market places of cotton",
+        "caag": "Cotton at a glance",
+        "caagc" : "Cotton is an immensely important crop for the sustainable economy of India and livelihood of the Indian cotton farming community. India being the 2nd largest producer of cotton in the world. Cotton is cultivated in about 312 lakh hectares across the world and in around 117 lakh hectares in the country. Thus, India accounts for around 37.5% of the global cotton area and contributes to 26% (around 6.20 Million MT) of the global cotton produce of 23.92 Million MT. Cotton continues to enjoy a pre-eminent and the most favoured fibre status among the Indian textile mills, as the major raw material for the textile industry.",
+        "avi": "A volatile industry: cotton industry",
+        "avic": "Cotton market is volatile like every other commodity market. Traders have to integrate bits of information regarding supply and demand, and compare the guesses of fellow traders before he pursues his estimates by promising to buy or sell. That’s why having prior knowledge about future prices will help the traders to sell the produce well.",
+        "avil": "Market Places",
+        "wwoc": "What World of Cotton does??",
+        "wwocc":"We are predicting the trend of the future sales prices of cotton at it’s major marketplaces in different parts of the country, by considering the past year’s data for our prediction. To see the future trend you have to login first. So why are you waiting just see the future trend in just a second.",
+        "wwocl": "Predict now:",
+        "cu": "Contact",
+        "cub": "US",
+        "name":"NAME",
+        "email": "EMAIL",
+        "msg": "MESSAGE",
+        "send": "Send",
+        "load": "Loading..."
+
+
+    },
+    "Hindi" : {
+        "firstIcon": "राज्यों और शहरों के आधार पर कपास की कीमत का पूर्वानुमान",
+        "secIcon": "कपास के बाजार स्थानों का पता लगाएं",
+        "caag": "एक नज़र में कपास",
+        "caagc": "कपास भारत की स्थायी अर्थव्यवस्था और भारतीय कपास कृषि समुदाय की आजीविका के लिए एक अत्यंत महत्वपूर्ण फसल है। भारत दुनिया में कपास का दूसरा सबसे बड़ा उत्पादक है। कपास की खेती दुनिया भर में लगभग 312 लाख हेक्टेयर और देश में लगभग 117 लाख हेक्टेयर में की जाती है। इस प्रकार, भारत वैश्विक कपास क्षेत्र का लगभग 37.5% हिस्सा है और 23.92 मिलियन मीट्रिक टन के वैश्विक कपास उत्पादन में 26% (लगभग 6.20 मिलियन मीट्रिक टन) का योगदान देता है। कपास कपड़ा उद्योग के लिए प्रमुख कच्चे माल के रूप में भारतीय कपड़ा मिलों के बीच एक प्रतिष्ठित और सबसे पसंदीदा फाइबर की स्थिति का आनंद ले रहा है।",
+        "avi": "एक अस्थिर उद्योग: कपास उद्योग",
+        "avic": "कॉटन मार्केट हर दूसरे कमोडिटी मार्केट की तरह अस्थिर है। व्यापारियों को आपूर्ति और मांग के संबंध में जानकारी के बिट्स को एकीकृत करना है, और साथी व्यापारियों के अनुमानों की तुलना करने से पहले वह खरीदने या बेचने का वादा करके अपने अनुमानों का पालन करता है। यही कारण है कि भविष्य की कीमतों के बारे में पूर्व ज्ञान होने से व्यापारियों को उपज को अच्छी तरह से बेचने में मदद मिलेगी।",
+        "avil": "बाजार स्थानों",
+        "wwoc": "कपास की दुनिया क्या करती है ??",
+        "wwocc":"हम अपनी भविष्यवाणी के लिए पिछले वर्ष के आंकड़ों पर विचार करके, देश के विभिन्न हिस्सों में प्रमुख बाजारों में कपास की भविष्य की बिक्री की कीमतों की प्रवृत्ति की भविष्यवाणी कर रहे हैं। भविष्य की प्रवृत्ति को देखने के लिए आपको पहले लॉगिन करना होगा। तो आप इंतजार क्यों कर रहे हैं, बस एक सेकंड में भविष्य की प्रवृत्ति देखें। ",
+        "wwocl": "अब भविष्यवाणी करें",
+        "cu": "संपर्क ",
+        "cub": "करें",
+        "name":"नाम",
+        "email": "ईमेल",
+        "msg": "संदेश",
+        "send": "भेजने",
+        "load": "लोड हो रहा है"
+    }
+}
+
+
