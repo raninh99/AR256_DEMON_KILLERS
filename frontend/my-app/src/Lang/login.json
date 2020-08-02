@@ -9,7 +9,22 @@
         "clkh":"Click here",
         "forpass": "Forgot Password",
         "loginb": "Login",
-        "copass":"Confirm Password"
+        "copass":"Confirm Password",
+        "all":"Please fill all credentials",
+        "emaile":"Email is not valid",
+        
+        "Load":"Loading...",
+        "wr":"Wrong Credentials",
+        "emailq":"Email already registered",
+    "again":"Please try again",
+    "otp":"OTP does not match",
+    "Ver":"Verify",
+        "Ent":"Enter Verification Code",
+        "Conf": "Confirm",
+        "Rse":"Resend",
+        "Vc": " We have sent a Verification code to your registered email Id." ,
+    "nv":"Email is not valid",
+    "passe":"Password doesnot match with confirm password"
 
     },
     "Hindi": {
@@ -22,6 +37,23 @@
         "clkh": "यहां क्लिक करें",
         "forpass": "पासवर्ड भूल गए",
         "loginb": "लॉग इन करें",
-        "copass": "पासवर्ड की पुष्टि कीजिये"
+        "copass": "पासवर्ड की पुष्टि कीजिये",
+        "all":"कृपया सभी क्रेडेंशियल्स भरें",
+        "emaile":"ईमेल पता मान्य नहीं है",
+        "wr":"गलत प्रविष्टियाँ",
+        "Load":" लोड हो रहा है",
+        "emailq":"ईमेल पहले से ही पंजीकृत है",
+    "again":"कृपया पुन: प्रयास करें",
+    "otp":"OTP मेल नहीं खाता",
+    "Ver":" सत्यापित करें",
+        "Ent":" सत्यापन कोड दर्ज करें",
+        "Conf": "पुष्टि करें",
+        "Rse":"पुन: भेजें",
+        "Vc": " हमने आपके पंजीकृत ईमेल आईडी पर एक सत्यापन कोड भेजा है",
+    "nv":"ईमेल पता मान्य नहीं है",
+    "passe":"पासवर्ड और पुष्टि पासवर्ड मेल नहीं खाते"
     }
 }
+
+
+

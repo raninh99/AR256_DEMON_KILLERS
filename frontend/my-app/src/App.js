@@ -8,6 +8,7 @@ import './App.css';
 
 
 
+import NavBar from './util/NavBar';
 
 import login from './pages/Login1';
 import signup from './pages/Signup';
@@ -29,7 +30,7 @@ const  App = () => {
     <Store.Provider value={{state,dispatch}} >
       <div className="App">
       <Router>
-        
+      <NavBar />
         <Switch>
           {/* <Route exact path = '/home' component ={home} /> */}
           <Route path = '/login' component = {login} />
