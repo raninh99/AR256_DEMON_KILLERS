@@ -24,4 +24,11 @@ urlpatterns = [
     path('FP/', FP),
     path('Query/', Query),
     path('login/', login),
+    path('getUserDetails/', getUserDetails),
+    path('mlModel/', mlModel),
+    path('mlModel1/', mlModel1),
+    path('mlModel2/', mlModel2),
+    path('allprice/', allprice1),
+    path('allprice1/', allprice),
+    path('allprice2/', allprice2),
 ]
