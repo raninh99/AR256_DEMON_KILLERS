@@ -11,8 +11,8 @@ d=os.path.dirname(os.getcwd())
 d
 xn=os.path.join(d,"sih_2/sih")
 f=os.path.join(d,"sih_2/sih/States")
-e=os.path.join(f,"up")
-q=os.path.join(e,"Hathras")
+e=os.path.join(f,"gujarat")
+q=os.path.join(e,"Amreli")
 os.chdir(q)
 
 dataset = pd.read_csv("feb.csv")
@@ -120,8 +120,8 @@ x2 = x2.astype('float64')
 
 
 
-from sklearn.linear_model import LinearRegression
-regressor=LinearRegression()
+from sklearn.ensemble import RandomForestRegressor
+regressor=RandomForestRegressor(n_estimators=400,random_state=0)
 regressor.fit(x,y)
 
 y_pred=regressor.predict(x2)
