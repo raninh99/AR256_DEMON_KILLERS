@@ -14,10 +14,13 @@
         "cub": "US",
         "name":"NAME",
         "email": "EMAIL",
-        "msg": "MESSAGE",
+        "msg": "YOUR SUGGESTIONS",
         "send": "Send",
-        "load": "Loading..."
-
+        "load": "Loading...",
+        "su": "Submitted successfully",
+        "al": "Please fill all details before submit",
+        "pl": "Please login first",
+        "fs": "For suggestions and improvement"
 
     },
     "Hindi" : {
@@ -35,9 +38,13 @@
         "cub": "करें",
         "name":"नाम",
         "email": "ईमेल",
-        "msg": "संदेश",
+        "msg": "आपके सुझाव",
         "send": "भेजने",
-        "load": "लोड हो रहा है"
+        "load": "लोड हो रहा है",
+        "su": "सफलतापूर्वक जमा",
+        "al": "कृपया जमा करने से पहले सभी विवरण भरें",
+        "fs": "सुझाव और सुधार के लिए",   
+        "pl":"कृपया लॉगिन करें"
     }
 }
 
