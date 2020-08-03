@@ -60,6 +60,10 @@ They can easily get an idea when to sell their surplus at what rate.
 4.Our model is giving RSS value around 0.32 and p value around 0.002 which is quite appreciable.
 5.We are getting an order of (1,1,1) for our arima model
 
+# Conclusion
 
+1.This with the help of our web-application one can see the future trend of cotton in major market places of cotton in the nation, both day-wise and month-wise trend for the next one year.
+2. For both buyers and for sellers we are increasing market place area by getting them know about the future cost of cotton at their door-step.
+3.Our interaction user-interface will fascinate the user as well.
 
 
