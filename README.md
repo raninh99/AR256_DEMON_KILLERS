@@ -1,12 +1,15 @@
+##SIH-2020(Software Edition)
 This is the problem given by Ministry of Textiles in SIH-2020 software edition in Grand finale, here the problem is to
-*Artificial Intelligence based solution for predicting future price trend of cotton
-*Suggesting a suitable pricing model.
-*Maintaining the bridge between buyers and sellers.
+
+1-Artificial Intelligence based solution for predicting future price trend of cotton
+2-Suggesting a suitable pricing model.
+3-Maintaining the bridge between buyers and sellers.
 
 Solution-
-*Developing a highly interactive Bi-lingual user’s interface for showing the future market price trend of cotton.
-*Predicting day-wise and month-wise price trend for next one year of major market places (both tabular and in the form of graph) of cotton in India.
-*Best price of cotton in your city from all market places of cotton in your desirable month.
+
+1-Developing a highly interactive Bi-lingual user’s interface for showing the future market price trend of cotton.
+2-Predicting day-wise and month-wise price trend for next one year of major market places (both tabular and in the form of graph) of cotton in India.
+3-Best price of cotton in your city from all market places of cotton in your desirable month.
 
 Technology Stack
 *For client side
