@@ -11,12 +11,14 @@ import firstIcon from '../images/prediction_graph.svg';
 import market_draw from '../images/market_draw.svg';
 import about_draw from '../images/about_draw.svg';
 
+import ContactUs from './ContactUs';
 
 import store from '../store/store';
 import Im from '../util/ImageSlider';
 
 import CONTENT from '../Lang/home.json';
 
+import Footer from '../util/Footer';
 
 const Home = () => {
     const {state} = useContext(store); 
@@ -119,10 +121,11 @@ const Home = () => {
                         <img src={graph_draw} width="698" height="366" alt="Predict Now" style={{paddingLeft:50}} ></img>
                         
                     </section>
-                    
+                    <ContactUs />
                     
                 </main>
             
+                <Footer/>
 
                 <svg aria-hidden="true" focusable="false" style={{display: 'none'}}>
                     

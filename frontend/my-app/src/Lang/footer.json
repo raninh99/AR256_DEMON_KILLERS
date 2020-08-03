@@ -1,0 +1,28 @@
+{
+    "English": {
+        "home": "Home",
+        "market" : "Market",
+        "prediction":"Prediction",
+        "login": "Login",
+        "signup":"Sign-up",
+        "logout":"Logout",
+        "profile": "Profile",
+        "rec": "Recources",
+        "contact": "Contact",
+        "title": "World of Cotton",
+        "dec": "Predicting the future market trend of cotton of respective market places in respective month using past year's data."
+    },
+    "Hindi": {
+        "home": "होम",
+        "market" : "मंडी",
+        "prediction":"भविष्यवाणी",
+        "login": "लॉग इन ",
+        "signup":"साइन अप",
+        "logout":"लॉग आउट",
+        "profile": "प्रोफ़ाइल",
+        "rec": "संसाधन",
+        "contact": "संपर्क",
+        "title": "कपास की दुनिया",
+        "dec": "पिछले वर्ष के आंकड़ों का उपयोग करके संबंधित माह में संबंधित बाजार स्थानों के कपास के भविष्य के बाजार के रुझान की भविष्यवाणी करना।"
+    }
+}

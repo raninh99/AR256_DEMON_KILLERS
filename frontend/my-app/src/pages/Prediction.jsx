@@ -719,7 +719,7 @@ const Prediction =() =>{
                                                         },
                                                         scaleLabel: {
                                                             display: true,
-                                                            labelString: 'Cotton Price',
+                                                            labelString: 'Cotton Prices per Quintals',
                                                             fontSize: 20
                                                             }
                                                     }]

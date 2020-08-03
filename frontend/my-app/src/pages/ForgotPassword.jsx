@@ -15,6 +15,8 @@ import Avatar from '../images/avatar.svg';
 import ForgotMobile from '../images/login-bg.svg';
 import Wavebg from '../images/wave.png';
 
+import CONTENT from '../Lang/forgot.json';
+
 import './pages.css';
 
 const ForgotPass = () => {
@@ -83,7 +85,7 @@ const ForgotPass = () => {
             
             if(res.data) {
                 if(res.data.status === "not registerd"){
-                    window.alert("First signup with this email id");
+                    window.alert(content.sin);
                     setLoad(false);
                 }
                 else{
@@ -160,7 +162,7 @@ const ForgotPass = () => {
             if(res.data) {
                 if(res.data.status === "done"){
                     setLoad(false);
-                    window.alert("Password Succesfully changed");
+                    window.alert(content.alert);
                     setVerified(true);
                 }
             }
@@ -190,6 +192,14 @@ const ForgotPass = () => {
         }
     }
 
+    let content = CONTENT;
+  
+    if(state.lang ==="Hindi"){
+        content = content.Hindi
+    }else{
+        content = content.English
+    }
+
     if(verified) {
         return <Redirect to='/login' />;
     }
@@ -209,7 +219,7 @@ const ForgotPass = () => {
                     <div className="login-content">
                         <form>
                             <img src={Avatar} alt="avatar img"></img>
-                            <h3 className="title">Forgot Password</h3>
+                            <h3 className="title">{content.fp}</h3>
                             <br></br><br></br>
                             
                             <div className="input-div pass focus">
@@ -217,7 +227,7 @@ const ForgotPass = () => {
                                         <i className="fas fa-user"></i>
                                 </div>
                                 <div className="div">
-                                        <h4>E-mail Address</h4>
+                                        <h4>{content.Email}</h4>
                                         <input 
                                             type="text"  
                                             name='email'
@@ -229,18 +239,18 @@ const ForgotPass = () => {
                             </div>
                             <br></br>
                             {load ? 
-                                <input type="button" className="btn_login"  value="Loading...." />
+                                <input type="button" className="btn_login"  value={content.Load} />
                                 : 
-                                <input type="submit" className="btn_login" onClick={onSubmit} value="Send OTP" />
+                                <input type="submit" className="btn_login" onClick={onSubmit} value={content.sub} />
                             }                      
                             
                             <br></br>
-                            <p>If you do not have account, please Click<Link to = '/signup'>  here</Link></p>
+                            <p>{content.Con}<Link to = '/signup'> {content.clk}</Link></p>
                             {errors=== 1 && 
-                                <p className="error">Please fill all credentials</p>
+                                <p className="error">{content.all}</p>
                             }
                             {errors === 2 &&
-                                <p className="error">Email does not have account</p>
+                                <p className="error">{content.not}</p>
                             }
                         </form>
                         
@@ -250,14 +260,14 @@ const ForgotPass = () => {
                     <div className="login-content">
                         <form>
                             <img src={Avatar} alt="avatar img"></img>
-                            <h2 className="title">Verify</h2>
+                            <h2 className="title">{content.Ver}</h2>
                             <br></br>
                             <div className="input-div one focus">
                                 <div className="i">
                                         <i className="fas fa-envelope"></i>
                                 </div>
                                 <div className="div">
-                                        <h4>Enter Verification Code</h4>
+                                        <h4>{content.Ent}</h4>
                                         <input 
                                             type = "text"
                                             name='otp'
@@ -268,20 +278,20 @@ const ForgotPass = () => {
                                 </div>
                             </div>
                             {load ? 
-                                <input type="button" className="btn_login"  value="Loading...." />
+                                <input type="button" className="btn_login"  value={content.Load} />
                                 : 
-                                <input type="submit" className="btn_login" onClick={submitOTP} value="Confirm" />
+                                <input type="submit" className="btn_login" onClick={submitOTP} value={content.Conf} />
                             } 
                             <br/>
                             {load ? 
-                                <input type="button" className="btn_login"  value="Loading...." />
+                                <input type="button" className="btn_login"  value={content.Load} />
                                 : 
-                                <input type="submit" className="btn_login" onClick={resendOTP} value="Resend" />
+                                <input type="submit" className="btn_login" onClick={resendOTP} value={content.Rse} />
                             } 
                             <br></br>
-                            <p>We have sent a Verification code to your registered email Id.</p>
+                            <p>{content.Vc}</p>
                             {errors === 4 &&
-                                <p className="error">Wrong otp</p>
+                                <p className="error">{content.otp}</p>
                             }
                         </form>
                         
@@ -292,14 +302,14 @@ const ForgotPass = () => {
                     <div className="login-content">
                         <form >
                             <img src={Avatar} alt = "avatar"></img>
-                            <h3 className="title">Change Password</h3>
+                            <h3 className="title">{content.Cg}</h3>
                             <br></br>
                             <div className="input-div pass focus">
                                 <div className="i"> 
                                         <i className="fas fa-lock"></i>
                                 </div>
                                 <div className="div">
-                                        <h4>Password</h4>
+                                        <h4>{content.Pass}</h4>
                                         <input 
                                             type="password"  
                                             name='password'
@@ -314,7 +324,7 @@ const ForgotPass = () => {
                                         <i className="fas fa-lock"></i>
                                 </div>
                                 <div className="div">
-                                    <h4>Confirm Password</h4>
+                                    <h4>{content.Cpass}</h4>
                                     <input 
                                         type="password"  
                                         name='confirmPassword'
@@ -326,20 +336,20 @@ const ForgotPass = () => {
                             </div>
                             {/* <a href="#">Forgot Password?</a> */}
                             {load ? 
-                                <input type="button" className="btn_login"  value="Loading...." />
+                                <input type="button" className="btn_login"  value={content.Load} />
                                 : 
-                                <input type="submit" className="btn_login" onClick={changePassword} value="Change" />
+                                <input type="submit" className="btn_login" onClick={changePassword} value={content.Chan} />
                             } 
                             <br></br>
                             
                             {errors=== 6 && 
-                                <p>Please fill all credentials</p>
+                                <p>{content.all}</p>
                             }
                             {errors === 7 &&
-                                <p  className="error">Password does not match with Confirm Password</p>
+                                <p  className="error">{content.pass}</p>
                             }
                             {errors=== 8 && 
-                                <p>Error occured please try after some time</p>
+                                <p>{content.err}</p>
                             }
                         </form>
                         

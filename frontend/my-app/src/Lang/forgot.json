@@ -1,0 +1,59 @@
+{
+    "English" :{
+        "fp":"Forgot Password",
+        "Email":"E-mail Address",
+        "sub":"Send OTP",
+        "Con":" If you do not have account, please ",
+        "clk": "Click here",
+        "Ver":"Verify",
+        "Ent":"Enter Verification Code",
+        "Conf": "Confirm",
+        "Rse":"Resend",
+        "Vc": " We have sent a Verification code to your registered email Id." ,
+        "Cg":"Change Password",
+        "Pass":"Password",
+        "Cpass":"Confirm Password",
+        "Load":"Loading...",
+        "sin":"First signup with this email id",
+            "alert":"Password Succesfully changed",
+            "all":"Please fill all credentials",
+            "not":"Email does not have a account",
+            "otp":"Wrong OTP",
+            "pass":"Password does not match with Confirm pPassword",
+            "err":"Error occured please try after some time",
+        "Chan":"Change"
+        
+    },
+    "Hindi" : {
+        "fp":"पासवर्ड भूल गए",
+        "Email":" ईमेल पता",
+        "sub":" OTP भेजें",
+        "Con":" यदि आपके पास खाता नहीं है, तो कृपया यहां ",
+        "clk": "क्लिक करें",
+        "Ver":" सत्यापित करें",
+        "Ent":" सत्यापन कोड दर्ज करें",
+        "Conf": "पुष्टि करें",
+        "Rse":"पुन: भेजें",
+        "Vc": " हमने आपके पंजीकृत ईमेल आईडी पर एक सत्यापन कोड भेजा है",
+        "Cg":" पासवर्ड बदलें",
+        "Pass":" पासवर्ड",
+        "Cpass":" बदला हुआ पासवर्ड",
+        "Chan":" परिवर्तन",
+        "Load":" लोड हो रहा है",
+        "sin":"इस ईमेल आईडी के साथ पहले साइनअप करें",
+            "alert":"पासवर्ड सफलतापूर्वक बदल दिया गया",
+            "all":"कृपया सभी क्रेडेंशियल्स भरें",
+            "not":"ईमेल किसी भी खाते से लिंक नहीं है",
+            "otp":"गलत ओटीपी",
+            "pass":"पासवर्ड और पुष्टि पासवर्ड मेल नहीं खाते",
+            "err":"कृपया त्रुटि हुई है कुछ समय बाद प्रयास करें"
+    
+        
+    }
+    
+    }
+
+
+
+
+  
