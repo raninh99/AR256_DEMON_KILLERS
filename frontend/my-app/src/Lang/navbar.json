@@ -7,7 +7,8 @@
         "login": "Login",
         "signup":"Sign-up",
         "logout":"Logout",
-        "profile": "Profile"
+        "profile": "Profile",
+        "buyer":"Buy-Sell"
       },
     "Hindi": {
         "title": "कपास की दुनिया",
@@ -17,6 +18,7 @@
         "login": "लॉग इन ",
         "signup":"साइन अप",
         "logout":"लॉग आउट",
-        "profile": "प्रोफ़ाइल"
+        "profile": "प्रोफ़ाइल",
+        "buyer":"खरीद बिक्री"
       }
   }

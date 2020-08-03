@@ -35,6 +35,10 @@ const NavBar = () => {
     }
   }
 
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'})
+ };
+
    let content = CONTENT;
   
   if(state.lang ==="Hindi"){
@@ -52,10 +56,10 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="1" as = {Link} to = '/'>{content.home}</Nav.Link></Nav.Item></div>
-            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="2" as = {Link} to = '/marketPlace'>{content.market}</Nav.Link></Nav.Item></div>
-            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="3" as = {Link} to = '/prediction'>{content.prediction}</Nav.Link></Nav.Item></div>
-            
+            <div className = 'Nav-item-br'><Nav.Item className='Nav-a' onClick={scrollTop}><Nav.Link eventKey="1" as = {Link} to = '/'>{content.home}</Nav.Link></Nav.Item></div>
+            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="2" as = {Link} to = '/marketPlace'>{content.market}</Nav.Link></Nav.Item></div>
+            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="3" as = {Link} to = '/prediction'>{content.prediction}</Nav.Link></Nav.Item></div>
+            <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="8" as = {Link} to = '/buyer'>{content.buyer}</Nav.Link></Nav.Item></div>
             {/* <div>
               <select
                 value={state.lang}
@@ -68,19 +72,19 @@ const NavBar = () => {
           </Nav>
           <Nav>
           {state.lang === 'Hindi' ?
-              <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="3" onClick = {changeLang}>English</Nav.Link></Nav.Item></div>   
+              <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="9" onClick = {changeLang}>English</Nav.Link></Nav.Item></div>   
               :
-              <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="3" onClick = {changeLang}>हिन्दी</Nav.Link></Nav.Item></div>
+              <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="10" onClick = {changeLang}>हिन्दी</Nav.Link></Nav.Item></div>
             }
             {state.isAuth ? (
                 <>
-                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="4" as = {Link} to = '/logout'>{content.logout}</Nav.Link></Nav.Item></div>
-                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="5" as = {Link} to = '/profile'>{content.profile}</Nav.Link></Nav.Item></div>
+                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="4" as = {Link} to = '/logout'>{content.logout}</Nav.Link></Nav.Item></div>
+                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="5" as = {Link} to = '/profile'>{content.profile}</Nav.Link></Nav.Item></div>
                 </>
               ):(
                 <>
-                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="6" as = {Link} to = '/login'>{content.login}</Nav.Link></Nav.Item></div>
-                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'><Nav.Link eventKey="7" as = {Link} to = '/signup'>{content.signup}</Nav.Link></Nav.Item></div>
+                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="6" as = {Link} to = '/login'>{content.login}</Nav.Link></Nav.Item></div>
+                  <div className = 'Nav-item-br'><Nav.Item className='Nav-a'  onClick={scrollTop}><Nav.Link eventKey="7" as = {Link} to = '/signup'>{content.signup}</Nav.Link></Nav.Item></div>
                 </>
               )
             }
