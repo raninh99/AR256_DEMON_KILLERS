@@ -7,7 +7,7 @@ This is the problem given by Ministry of Textiles in SIH-2020 software edition i
 
 3-Maintaining the bridge between buyers and sellers.
 
-Solution-
+# Solution-
 
 1-Developing a highly interactive Bi-lingual user’s interface for showing the future market price trend of cotton.
 
@@ -15,7 +15,7 @@ Solution-
 
 3-Best price of cotton in your city from all market places of cotton in your desirable month.
 
-Technology Stack
+#Technology Stack
 
 *For client side
 -React.js with bootstrap and axios for data transfer
@@ -27,6 +27,39 @@ Technology Stack
 -Non-Linear Random Forest Regression model for day wise future trend.
 -Arima model for full year trend
 
-Factors considered in ML Model
+Factors considered in ML Model:
+
+*In Non-Linear Random Forest Regression Model
+Yield 
+Area Sown
+Inflation Rate
+Date 
+Month
+
+*In Arima Model
+Time based analysis done here on available past year data.
+
+# Our End Users
+
+1.Farmers
+They can easily get an idea when to sell their surplus at what rate.
+ 
+ *What would be their net price including all taxes and transportation cost in some other city or state 
+
+2.Industrialists.
+
+*Easily compute their net profit 
+
+*Develop their marketing strategy for the next commercial year i.e. when and from where to buy their raw materials.
+
+# How our model is working
+
+1.Our Random forest model is able to discover more complex dependencies. 
+2.It is the sum of piecewise function and has regularization inbuilt.
+3.In our time-series analysis model(arima), we are minimizing irregularity by implementing operations like logscale and exponential weighted moving average.
+4.Our model is giving RSS value around 0.32 and p value around 0.002 which is quite appreciable.
+5.We are getting an order of (1,1,1) for our arima model
+
+
 
 
