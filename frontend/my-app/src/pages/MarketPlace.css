@@ -1,0 +1,78 @@
+.market-main{
+    padding-top: 40px;
+    text-align: center;
+    overflow-x: hidden;
+}
+.market-head{
+    font-size: 60px;
+    padding-bottom: 20px;
+    
+}
+
+.market-container{
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.market-content{
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left: 20px;;
+    padding-right: 20px;
+    justify-content: center;
+    border: 2px black solid;
+    border-radius: 20px;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 600px){
+  .market-content{
+    padding-left: 0px;;
+    padding-right: 0px;
+    font-size: 20px;
+  }
+  .market-container{
+    width: 90vw;
+    margin-left: 5vw;
+  }
+}
+
+
+
+table {
+    font-family: sans-serif;
+  }
+  table th, table td {
+    padding: .25em .5em;
+    text-align: left;
+  }
+  table th:nth-child(2), table td:nth-child(2) {
+    text-align: right;
+  }
+  table td {
+    background-color: #eee;
+  }
+  table th {
+    background-color: #009;
+    color: #fff;
+  }
+  
+  .zigzag {
+    border-collapse: separate;
+    border-spacing: .25em 1em;
+  }
+  .zigzag tbody tr:nth-child(odd) {
+    transform: rotate(2deg);
+  }
+  .zigzag thead tr,
+  .zigzag tbody tr:nth-child(even) {
+    transform: rotate(-2deg);
+  }
+
+.market-map{
+    text-align: center;
+}
+
+.table-item{
+  color: black;
+}
