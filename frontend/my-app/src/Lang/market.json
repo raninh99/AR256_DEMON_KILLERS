@@ -1,0 +1,20 @@
+{
+    "English": {
+        "marh":"Market Places of Cotton",
+        "mard1": "In India, majority of the cotton production comes from nine major cotton growing states, which are grouped into three diverse agro-ecological zones, Northern zone comprising States of Punjab, Haryana and Rajasthan, Central zone comprising the States of Gujarat, Maharashtra and Madhya Pradesh and Southern zone comprising the States of Telangana, Andhra Pradesh and Karnataka and their major market places also lies in the same region also.",
+        "mard2": "Cotton market is volatile like every other commodity market. Traders have to integrate bits of information regarding supply and demand, and compare the guesses of fellow traders before he pursues his estimates by promising to buy or sell. That’s why having prior knowledge about future prices will help the traders to sell the produce well.",
+        "load": "Loading...",
+        "marh2": "Select the state from map to see the market place...",
+        "mp": "Market Places"
+    },
+    "Hindi" : {
+        "marh": "कपास के बाजार के स्थान",
+        "mard1": "भारत में, कपास उत्पादन का अधिकांश भाग नौ प्रमुख कपास उगाने वाले राज्यों से आता है, जिन्हें तीन विविध कृषि-पारिस्थितिक क्षेत्रों में बांटा गया है, जिनमें उत्तरी क्षेत्र पंजाब, हरियाणा और राजस्थान शामिल हैं, मध्य क्षेत्र में गुजरात, महाराष्ट्र और मध्य प्रदेश शामिल हैं। और दक्षिणी क्षेत्र में तेलंगाना, आंध्र प्रदेश और कर्नाटक राज्य शामिल हैं और उनके प्रमुख बाजार स्थान भी उसी क्षेत्र में हैं।",
+        "mard2": "कॉटन मार्केट हर दूसरे कमोडिटी मार्केट की तरह अस्थिर है। व्यापारियों को आपूर्ति और मांग के संबंध में जानकारी के बिट्स को एकीकृत करना है, और साथी व्यापारियों के अनुमानों की तुलना करने से पहले वह खरीदने या बेचने का वादा करके अपने अनुमानों का पालन करता है। यही कारण है कि भविष्य की कीमतों के बारे में पूर्व ज्ञान होने से व्यापारियों को उपज को अच्छी तरह से बेचने में मदद मिलेगी।",
+        "load": "लोड हो रहा है",
+        "marh2": "बाजार स्थान देखने के लिए मानचित्र से राज्य का चयन करें ...",
+        "mp": "बाजार के स्थान"
+    }
+}
+
+
