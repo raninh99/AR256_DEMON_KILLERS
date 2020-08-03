@@ -1,4 +1,4 @@
-##SIH-2020(Software Edition)
+# SIH-2020(Software Edition)
 This is the problem given by Ministry of Textiles in SIH-2020 software edition in Grand finale, here the problem is to
 
 1-Artificial Intelligence based solution for predicting future price trend of cotton
