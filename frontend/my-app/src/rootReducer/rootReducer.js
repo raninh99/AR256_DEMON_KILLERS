@@ -20,9 +20,11 @@ export default function rootReducer(state, action) {
         case 'LOGOUT':
             localStorage.removeItem('FBIdToken')
             return {
+                ...state,
                 user: null,
                 token: null,
-                isAuth: false
+                isAuth: false,
+
                         
             }
         case 'UPDATE' : 

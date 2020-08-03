@@ -17,6 +17,7 @@ import Wavebg from '../images/wave.png';
 
 import './pages.css';
 
+import Footer from '../util/Footer';
 
 import CONTENT from '../Lang/login.json';
 
@@ -71,7 +72,7 @@ const Signup = () => {
             {
                 if(res.data.status === "already registered"){
                     setLoad(false);
-                    window.alert("Email already registered");
+                    window.alert(`${content.emailq}`);
                 }else{
                     setBackOTP(res.data.status);
                     setFirst(true);
@@ -145,7 +146,7 @@ const Signup = () => {
                 setFirst(false);
             }
             setFirst(false);
-            window.alert("Please try again");
+            window.alert(`${content.again}`);
             console.log(error);
         }
     }
@@ -175,7 +176,7 @@ const Signup = () => {
             verifyOTP();
         }else{
             console.log(md5(userOTP));
-            window.alert("OTP does not match");
+            window.alert(`${content.otp}`);
         }
     }
 
@@ -267,23 +268,23 @@ const Signup = () => {
                                 </div>
                                 {load ? 
                                     (
-                                        <input type="button" className="btn_login" value="Loading..." />
+                                        <input type="button" className="btn_login" value={content.Load} />
                                     ):(
                                         <input type="submit" className="btn_login" onClick={onSubmit} value={content.signupb} />
                                     )
                                 }
                                 
                                 <br></br>
-                                <p>{content.noacc}<Link to = '/login'>{content.clkh}</Link></p>
+                                <p>{content.acc}<Link to = '/login'>{content.clkh}</Link></p>
                                 {/* {samp} */}
                                 {errors=== 1 && 
-                                    <p className="error">Please fill all credentials</p>
+                                    <p className="error">{content.all}</p>
                                 }
                                 {errors === 2 &&
-                                    <p className="error">Email is not valid</p>
+                                    <p className="error">{content.nv}</p>
                                 }
                                 {errors === 3 &&
-                                    <p  className="error">Password doesnot match with Confirm Password</p>
+                                    <p  className="error">{content.passe}</p>
                                 }
                             </form>
                             
@@ -303,13 +304,13 @@ const Signup = () => {
                         <div className="login-content">
                             <form>
                                 <img src={Avatar} alt="avatar img"></img>
-                                <h2 className="title">Verify</h2>
+                            <h2 className="title">{content.Ver}</h2>
                                 <div className="input-div one focus">
                                     <div className="i">
                                             <i className="fas fa-envelope"></i>
                                     </div>
                                     <div className="div">
-                                            <h4>Enter Verification Code</h4>
+                                            <h4>{content.Ent}</h4>
                                             <input 
                                                 type = "text"
                                                 onChange = {otpChange}
@@ -320,21 +321,21 @@ const Signup = () => {
                                     </div>
                                 </div>
                                 {load ? 
-                                    <input type="button" className="btn_login"  value="Loading..." />
+                                    <input type="button" className="btn_login"  value={content.Load} />
                                     :
-                                    <input type="submit" className="btn_login" onClick={submitOTP} value="Confirm" />
+                                    <input type="submit" className="btn_login" onClick={submitOTP} value={content.Conf} />
 
                                 }
                                 <br/>
                                 {load ? 
-                                    <input type="button" className="btn_login"  value="Loading..." />
+                                    <input type="button" className="btn_login"  value={content.Load} />
                                     :
-                                    <input type="submit" className="btn_login" onClick={resendOTP} value="Resend" />
+                                    <input type="submit" className="btn_login" onClick={resendOTP} value={content.Rse} />
 
                                 }
                                 
                                 <br></br>
-                                <p>We have sent a Verification code to your registered email Id.</p>
+                                <p>{content.Vc}</p>
                             </form>
                             
                         </div>
@@ -343,7 +344,7 @@ const Signup = () => {
                         
             )}
 
-           
+            <Footer />
             
         </>
     );

@@ -13,10 +13,32 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
+
+
+// import Ahemdabad from '../images/Ahmedabad.png';
+// import Alirajpur from '../images/Alirajpur.png';
+// import Amravati from '../images/Amravati.png';
+// import Amreli from '../images/Amreli.png';
+// import Aurangabad from '../images/Aurangabad.png';
+// import Ahemdabad from '../images/Ahmedabad.png';
+// import Ahemdabad from '../images/Ahmedabad.png';
+// import Ahemdabad from '../images/Ahmedabad.png';
+// import Ahemdabad from '../images/Ahmedabad.png';
+
+// import Ahemdabad from '../images/Ahmedabad.png';
+// import Ahemdabad from '../images/Ahmedabad.png';import Ahemdabad from '../images/Ahmedabad.png';
+
+
+
 import axios from 'axios';
 
 
+import Footer from '../util/Footer';
+
 import CONTENT from '../Lang/prediction.json';
+
+import g1 from "../images/g1.jpg";
+import g2 from "../images/g2.jpg";
 
 import './pages.css';
 const Prediction =() =>{
@@ -402,6 +424,29 @@ const Prediction =() =>{
             [e.target.name] : e.target.value
         });
     }
+
+    const [minmax, setminmax] = useState([]);
+    const x = async() => {
+        const PostData={
+            state: sata.regions.toLowerCase(),
+            city: sata.area.toLowerCase(),
+            month: sata.month.toLowerCase(),
+            token: localStorage.FBIdToken
+        }
+        try{
+            const res = await axios({
+                url: "https://sih-django.herokuapp.com/mlModel2/",
+                method: 'POST',
+                data: PostData
+            });
+            if(res.data){
+                console.log(res.data);
+                setminmax(res.data.x);
+            }
+        }catch(error){
+            console.log(error);
+        }
+    }
     
         
     //imageg.map((m,i)=>(
@@ -422,11 +467,13 @@ const Prediction =() =>{
                 method: 'POST',
                 data: PostData
             });
+
+        
             if(res.data)
             {
                 console.log(res.data);
                 setBuffer(res.data.buffer);
-                window.alert("Graph is displayed, Please scroll down");
+                window.alert(content.gd);
                 setGraphLoad(2);
             }            
         }catch(error){
@@ -435,7 +482,10 @@ const Prediction =() =>{
             
             setBuffer([]);
             if(error.response.data.flag === "False"){
-                window.alert("Data for this combination not available");
+                window.alert(content.dna);
+                setGraphLoad(2);
+            }else{
+                setGraphLoad(2);
             }
             setGraphLoad(2);
             console.log(error);
@@ -469,7 +519,7 @@ const Prediction =() =>{
         e.preventDefault()
         if(sata.regions==='')
         {
-            window.alert("please selectState, region and month to get result");
+            window.alert(content.ps);
         }
         else{
             xcv();
@@ -483,16 +533,17 @@ const Prediction =() =>{
         e.preventDefault();
         let chk = verify();
         if(!maint){
-            window.alert(">Please confirm first before submit");
+            window.alert(content.pc);
         }
         if(chk &&maint ){
             setChk(true);
             setGraphLoad(1);
             sendDetail();
+            x();
         }
         else{
             setChk(false);
-            window.alert(">Please select State, region and month to get result");
+            window.alert(content.ps);
         }
     }
     if(!state.isAuth){
@@ -637,7 +688,7 @@ const Prediction =() =>{
                             <><Button variant="outline-success" onClick={onSubmit}>{content.res}</Button>{' '}</>
                         }
                         {graphLoad === 1 &&
-                            <><Button variant="outline-success" >Loading...</Button>{' '}</>
+                            <><Button variant="outline-success" >{content.load}</Button>{' '}</>
                         }
                         {/* <Button variant="outline-success" onClick={onSubmit}>Get Result</Button>{' '} */}
                         <br></br>
@@ -692,7 +743,7 @@ const Prediction =() =>{
                                                 pointDot: true,
                                                 title:{
                                                 display:true,
-                                                text:`Predicted Price of cotton for ${sata.area}`,
+                                                text:`${content.gt} ${content[sata.area]}`,
                                                 fontSize:20
                                                 },
                                                 scales: {
@@ -703,7 +754,7 @@ const Prediction =() =>{
                                                         },
                                                         scaleLabel: {
                                                         display: true,
-                                                        labelString: 'Days of Month',
+                                                        labelString: `${content.dm}`,
                                                         fontSize: 20
                                                         }
                                                     }],
@@ -719,7 +770,7 @@ const Prediction =() =>{
                                                         },
                                                         scaleLabel: {
                                                             display: true,
-                                                            labelString: 'Cotton Prices per Quintals',
+                                                            labelString: `${content.xax}`,
                                                             fontSize: 20
                                                             }
                                                     }]
@@ -733,7 +784,147 @@ const Prediction =() =>{
                                     </div>
                                 </>
                                 
-                               
+                                <div className="t-wrapper">
+                                
+                                    
+                                        <table className="fl-table">
+                                            <thead>
+                                            <tr>
+                                                <th>{content.dd}</th>
+                                                <th>{content.pp}</th>
+                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            {imageBuffer && 
+                                                imageBuffer.map((m,i) =>(
+                                                    <tr>
+                                                        <td>{i+1}</td>
+                                                        <td>{m.toFixed(2)}</td>
+                                                    </tr>
+                                                ))
+                                            }
+                                            
+                                            
+                                            
+                                        
+                                            </tbody>
+                                        </table>
+                                    
+                                </div>
+                                
+                                
+                               <br/><br/>
+                               <h2>{content.ah}</h2>
+                                {sata.area === "Ahmedabad"  ? (
+                                    <img src= {g2} />
+                                ):(
+                                    <img src= {g1} />
+                                )
+
+                                
+                                }
+                                
+<br/>
+                                <div className="t-wrapper">
+<br/>                                                            
+                                                                    
+                                <table className="fl-table">
+                                    <thead>
+                                    <tr>
+                                        <th>{content.mon}</th>
+                                        <th>{content.min}</th>
+                                        <th>{content.max}</th>
+                                        <th>{content.avg}</th>
+                                        
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    
+                                        <tr>
+                                            <td>{content.january}</td>
+                                            <td>{minmax[0][0].toFixed(2)}</td>
+                                            <td>{minmax[0][1].toFixed(2)}</td>
+
+                                            <td>{minmax[0][0].toFixed(2)/2+minmax[0][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.february}</td>
+                                            <td>{minmax[1][0].toFixed(2)}</td>
+                                            <td>{minmax[1][1].toFixed(2)}</td>
+                                            <td>{minmax[1][0].toFixed(2)/2+minmax[1][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.march}</td>
+                                            <td>{minmax[2][0].toFixed(2)}</td>
+                                            <td>{minmax[2][1].toFixed(2)}</td>
+                                            <td>{(minmax[2][0].toFixed(2)/2+minmax[2][1].toFixed(2)/2).toFixed(2)}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.april}</td>
+                                            <td>{minmax[3][0].toFixed(2)}</td>
+                                            <td>{minmax[3][1].toFixed(2)}</td>
+                                            <td>{minmax[3][0].toFixed(2)/2+minmax[3][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.may}</td>
+                                            <td>{minmax[4][0].toFixed(2)}</td>
+                                            <td>{minmax[4][1].toFixed(2)}</td>
+                                            <td>{minmax[4][0].toFixed(2)/2+minmax[4][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.june}</td>
+                                            <td>{minmax[5][0].toFixed(2)}</td>
+                                            <td>{minmax[5][1].toFixed(2)}</td>
+                                            <td>{minmax[5][0].toFixed(2)/2+minmax[5][1].toFixed(2)/2}</td>
+                                        </tr><tr>
+                                            <td>{content.july}</td>
+                                            <td>{minmax[6][0].toFixed(2)}</td>
+                                            <td>{minmax[6][1].toFixed(2)}</td>
+                                            <td>{minmax[6][0].toFixed(2)/2+minmax[6][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.august}</td>
+                                            <td>{minmax[7][0].toFixed(2)}</td>
+                                            <td>{minmax[7][1].toFixed(2)}</td>
+                                            <td>{minmax[7][0].toFixed(2)/2+minmax[7][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.september}</td>
+                                            <td>{minmax[8][0].toFixed(2)}</td>
+                                            <td>{minmax[8][1].toFixed(2)}</td>
+                                            <td>{minmax[8][0].toFixed(2)/2+minmax[8][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.october}</td>
+                                            <td>{minmax[9][0].toFixed(2)}</td>
+                                            <td>{minmax[9][1].toFixed(2)}</td>
+                                            <td>{minmax[9][0].toFixed(2)/2+minmax[9][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.november}</td>
+                                            <td>{minmax[10][0].toFixed(2)}</td>
+                                            <td>{minmax[10][1].toFixed(2)}</td>
+                                            <td>{minmax[10][0].toFixed(2)/2+minmax[11][1].toFixed(2)/2}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{content.december}</td>
+                                            <td>{minmax[11][0].toFixed(2)}</td>
+                                            <td>{minmax[11][1].toFixed(2)}</td>
+                                            <td>{minmax[11][0].toFixed(2)/2+minmax[11][1].toFixed(2)/2}</td>
+                                        </tr>
+
+                                    
+                                    
+                                    
+
+                                    </tbody>
+                                </table>
+
+                                </div>
+
                                    
                                
                             </div>
@@ -747,7 +938,7 @@ const Prediction =() =>{
             
             
             
-           
+           < Footer /> 
         </div>
     );
 }

@@ -1,0 +1,54 @@
+{
+    "English":{
+        "to": "FAQ(Frequently Asked Questions)",
+        "q1": "1. What World of Cotton does?",
+        "q2": "Q2. How it is predicting future trend?",
+        "q3": "Q3. How can I see the prediction?",
+        
+        "q4": "Q4. What are cotton growing states in India?",
+        "q5": "Q5. Which State grows the more cotton?",
+        "q6": "Q6. Which state has largest area under cotton?",
+        "q7": "Q7. Which State has highest productivity?",
+        "q8": "Q8. When the cotton is planted in India?",
+        "q9": "Q9. When Indian cotton harvested?",
+        "q10": "Q10. How many varieties are grown in India?",
+        "a1":"Ans. World of Cotton predicts the future market price trend of cotton in respective market places of India of required future month. ",
+        "a2":"Ans. For getting the prediction first you have to register yourself as only trusted user can see the prediction.        ",
+        "a3":"Ans. For getting the prediction first you have to register yourself as only trusted user can see the prediction.",
+        "a4":"Ans. In India, cotton is grown in 9 major cotton growing States viz. Punjab, Haryana and Rajasthan in Northern zone, Gujarat, Maharashtra and MP in Central zone and Andhra Pradesh, Karnataka and Tamil Nadu in Southern zone. Besides, cotton is also grown in Orissa.        ",
+        "a5":"Ans. In irrigated areas of Northern zone cotton plantings is from mid-April till last week of May. In Central zone and Southern zones planting is taken up in June-July depending on onset of monsoon and continue till August. In Tamil Nadu (Southern zone) planting for summer crop is taken up in Jan/Feb and for winter in June-July.        ",
+        "a6":"Ans. Maharashtra has the largest area under cotton cultivation followed by Gujarat.        ",
+        "a7":"Ans.  Cotton productivity has been highest in Karnataka at 670 kgs, in Gujarat at 633 kgs per hectare in 2008-09.        ",
+        "a8":"Ans. In irrigated areas of Northern zone cotton plantings is from mid-April till last week of May. In Central zone and Southern zones planting is taken up in June-July depending on onset of monsoon and continue till August. In Tamil Nadu (Southern zone) planting for summer crop is taken up in Jan/Feb and for winter in June-July.        ",
+        "a10":"Ans. India produce large number of varieties and hybrids, number of varieties in cultivation exceeds seventy-five. However, 98 per cent of the production is contributed by about 25 varieties.        ",
+        "a9":"Ans. Harvesting period is mainly from October to February. However, zone-wise harvesting period is as per details given below:        "
+
+
+    },
+    "Hindi": {
+        "to": "सामान्य प्रश्न (अक्सर पूछे जाने वाले प्रश्न)",
+        "q1": "प्रश्न 1. कपास की दुनिया क्या करती है?",
+        "q2": "प्रश्न 2. यह भविष्य की प्रवृत्ति की भविष्यवाणी कैसे कर रहा है?",
+        "q3": "प्रश्न 3. मैं भविष्यवाणी कैसे देख सकता हूं?",
+        
+        "q4": "प्रश्न 4. भारत में कपास उगाने वाले राज्य कौन से हैं?",
+        "q5": "प्रश्न 5. कौन सा राज्य अधिक कपास उगाता है?",
+        "q6": "प्रश्न 6. किस राज्य में कपास का सबसे बड़ा क्षेत्र है?",
+        "q7": "प्रश्न 7. किस राज्य में सर्वाधिक उत्पादकता है?",
+        "q8": "प्रश्न 8. भारत में कपास कब लगाया जाता है?",
+        "q9": "प्रश्न 9. जब भारतीय कपास की कटाई हुई?",
+        "q10": "प्रश्न 10. भारत में कितनी किस्में उगाई जाती हैं?",
+        "a1":"उत्तर: कपास की दुनिया भविष्य के भारत के संबंधित बाजार स्थानों में कपास के भविष्य के बाजार मूल्य की प्रवृत्ति की भविष्यवाणी करती है।",
+        "a2":"उत्तर: यह पिछले 6 वर्षों के कपास के बिक्री डेटा-सेट का उपयोग करके भविष्य की कीमत की प्रवृत्ति की भविष्यवाणी कर रहा है।        ",
+        "a3":"उत्तर: भविष्यवाणी प्राप्त करने के लिए पहले आपको खुद को पंजीकृत करना होगा क्योंकि केवल विश्वसनीय उपयोगकर्ता ही भविष्यवाणी देख सकता है।        ",
+        "a4":"उत्तर: भारत में, कपास को 9 प्रमुख कपास उत्पादक राज्यों में उगाया जाता है। पंजाब, हरियाणा और राजस्थान उत्तरी क्षेत्र में, गुजरात, महाराष्ट्र और मध्य क्षेत्र में आंध्र प्रदेश और दक्षिणी क्षेत्र में आंध्र प्रदेश, कर्नाटक और तमिलनाडु। इसके अलावा, उड़ीसा में कपास भी उगाया जाता है।",
+        "a5":"उत्तर: गुजरात महाराष्ट्र के बाद कपास उगाने वाला राज्य है।",
+        "a6":"उत्तर: गुजरात के बाद महाराष्ट्र में कपास की खेती का सबसे बड़ा क्षेत्र है।",
+        "a7":"उत्तर: कपास की उत्पादकता कर्नाटक में 670 किलोग्राम, गुजरात में 2008-09 में 633 किलोग्राम प्रति हेक्टेयर, उच्चतम रही है।        ",
+        "a9":"उत्तर: कटाई की अवधि मुख्य रूप से अक्टूबर से फरवरी तक है। हालांकि, क्षेत्रवार कटाई की अवधि नीचे दिए गए विवरण के अनुसार है:",
+        "a8":"उत्तर: उत्तरी क्षेत्र के सिंचित क्षेत्रों में कपास रोपण अप्रैल के मध्य से मई के अंतिम सप्ताह तक होता है। मध्य क्षेत्र और दक्षिणी ज़ोन में रोपण मानसून की शुरुआत के आधार पर जून-जुलाई में किया जाता है और अगस्त तक जारी रहता है। तमिलनाडु (दक्षिणी क्षेत्र) में ग्रीष्मकालीन फसल के लिए रोपण जनवरी / फरवरी में और सर्दियों के लिए जून-जुलाई में लिया जाता है।        ",
+        "a10":"उत्तर: भारत बड़ी संख्या में किस्मों और संकरों का उत्पादन करता है, खेती में किस्मों की संख्या पचहत्तर से अधिक है। हालांकि, उत्पादन का 98 प्रतिशत लगभग 25 किस्मों द्वारा योगदान दिया जाता है।"
+    }
+}
+
+

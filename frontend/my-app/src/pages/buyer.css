@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap");
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", arial, sans-serif;
+  color: #222;
+} */
+
+div.focus:before, .input-div.focus:after {
+    width: 40%;
+}
+.buyer{
+    overflow-x: hidden;
+}
+.buypic{
+    width: 60vw;
+}
+.hlo{
+    margin-left: 30px;
+    align-content: center;
+}
+
+
+.inp-col{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.buyer-sh{
+    width: 80vw;
+    margin-left: 10vw;
+}
+#selectMonth{
+    padding-left: 0px;
+}
+
+
+
+.colxz{
+    margin-bottom: 70px;
+}
+#price-container {
+  align-items: center;
+  height: 300px;
+  width: 270px;
+  
+  padding: 20px;
+  border-radius: 5px;
+  background: #fffffb;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 675px){
+    .buypic{
+        width: 90vw;
+    }
+    .inp-col{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: 30px;
+        width: 70vw;
+    }
+    .mon{
+        margin-top: 30px;
+    }
+    .colxz{
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+    }
+    #price-container {
+        align-items: center;
+        height: 300px;
+        width: 80vw;
+        
+        
+    }
+    .hlo{
+        margin-left: -15px;
+    }
+}
+#price-container .profile-img {
+  height: 100px;
+  width: 100px;
+  background: url("https://2.bp.blogspot.com/_-_zdF2V9ddQ/SZj8cUMWfAI/AAAAAAAAAdA/c7RVSgGHvFI/s320/gossypium_herbaceum3.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#price-container h1 {
+  font-family: 'Sriracha', arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffc145;
+}
+#price-container .description {
+  margin-bottom: 20px;
+}
+#price-container .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+#price-container .social a {
+  text-align: center;
+  border: solid 2px #ff6b6c;
+  width: 75px;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+#price-container .social a:hover {
+  background: #ff6b6c;
+  color: white;
+  cursor: pointer;
+}
+#price-container button {
+  width: 80%;
+  height: 80px;
+  font-size: 2rem;
+  margin: 30px 10% 0 10%;
+  color: #fffffb;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff6b6c, #ffc145, #ffc145, #ff6b6c);
+  background-size: 300% 300%;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+#price-container button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+  -webkit-animation: gradientBG 1.5s ease-in-out forwards;
+  animation: gradientBG 1.5s ease-in-out forwards;
+  cursor: pointer;
+}
+#price-container button:active {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transform: translateY(4px);
+}
+#price-container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5b5f97;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  padding: 0 20px;
+  margin-left: -20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#price-container footer div {
+  display: flex;
+}
+#price-container footer div .fa-heart {
+  color: #ff6b6c;
+}
+#price-container footer div p:first-child {
+  margin-right: 10px;
+  border-right: 4px solid white;
+  padding-right: 10px;
+}
+
+@-webkit-keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "English": {
+        "bh": "NET COTTON PRICE AT YOUR PLACE",
+        "bsh":"Get the best price of cotton at your town place from all the market places of cotton all over the nation",
+        "st": "State",
+        "ci": "City",
+        "al": "*This price calculation is for 1 quintal only",
+        "wt": "With Transportation",
+        "wnt": "Without Transportation"
+    },
+    "Hindi":{
+        "bh": "नेट कॉटन मूल्य आपके स्थान पर",
+        "bsh":"पूरे देश में कपास के सभी बाजार स्थानों से अपने शहर की जगह पर कपास का सर्वोत्तम मूल्य प्राप्त करें",
+        "st": "राज्य",
+        "ci": "नगर",
+        "al": "*यह मूल्य गणना केवल 1 क्विंटल के लिए है",
+        "wt": "परिवहन के साथ",
+        "wnt": "परिवहन के बिना"
+    }
+}

@@ -13,7 +13,7 @@ import Avatar from '../images/avatar.svg';
 import LoginMobile from '../images/login-bg.svg';
 import Wavebg from '../images/wave.png'; 
 
-
+import Footer from '../util/Footer';
 
 import CONTENT from '../Lang/login.json';
 
@@ -147,7 +147,7 @@ const Login = () =>{
                         </div>
                         <Link to='/forgotPassword'>{content.forpass}</Link>
                         {load ?
-                            <input type="submit" className="btn_login" value="Loading" />
+                            <input type="submit" className="btn_login" value={content.Load} />
                             :
                             <input type="submit" className="btn_login" onClick={onSubmit} value={content.loginb} />
                         }
@@ -157,19 +157,19 @@ const Login = () =>{
                         <p>{content.noacc}<Link to = '/signup'> {content.clkh}</Link></p>
                         {/* {samp} */}
                         {errors=== 1 && 
-                            <p>Please fill all credentials</p>
+                            <p>{content.all}</p>
                         }
                         {errors === 2 &&
-                            <p>Email is not valid</p>
+                            <p>{content.emaile}</p>
                         }
                         {errors === 4 &&
-                            <p>Wrong Credentials</p>
+                            <p>{content.wr}</p>
                         }
                     </form>
                     
                 </div>
             </div>
-            
+            <Footer />
         </>
     );
 }
